@@ -1,0 +1,70 @@
+Här ska C#-klasserna ligga som beskriver innehållet i JSON-filen.
+
+Exempelvis kommer vi senare behöva beskriva:
+
+ett ämne,
+ett ord
+
+En modell är alltså en C#-representation av data.
+
+JSON-filen och C#-modellerna måste passa ihop
+
+
+Modell för ämnet
+
+Ämnesobjektet innehåller:
+
+id
+title
+words
+
+Det betyder att ämnesklassen behöver egenskaper för:
+
+Id
+Title
+Words
+
+Words ska vara en lista eftersom ett ämne innehåller flera ord.
+
+Modell för ordet
+
+Varje ord innehåller:
+
+id
+text
+imagePath
+audioPath
+description
+
+Ordklassen behöver därför motsvarande egenskaper:
+
+Id
+Text
+ImagePath
+AudioPath
+Description
+
+
+Kopplingen mellan JSON och C#
+
+Strukturen blir:
+
+topics.json
+    ↓
+Lista med Topic
+    ↓
+Varje Topic innehåller en lista med Word
+
+Ungefär:
+
+List<Topic>
+└── Topic
+    ├── Id
+    ├── Title
+    └── List<Word>
+        └── Word
+            ├── Id
+            ├── Text
+            ├── ImagePath
+            ├── AudioPath
+            └── Description

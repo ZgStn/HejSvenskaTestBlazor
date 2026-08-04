@@ -1,0 +1,12 @@
+Här ska logiken för att läsa JSON-filen ligga.
+
+Razor-sidorna ska inte själva öppna och läsa filen. I stället ska de be en service om informationen.
+Razor-sida -> TopicService -> topic.JSON
+
+Detta gör att varje del får ett tydligt ansvar:
+
+Razor-sidan visar information.
+Servicen hämtar information.
+JSON-filen lagrar information.
+Modellerna beskriver informationens struktur.
+

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3Si5eSLXF4A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ozged\\.nuget\\packages\\microsoft.aspnetcore.app.internal.assets\\10.0.10\\microsoft.aspnetcore.app.internal.assets.10.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

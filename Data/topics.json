@@ -1,0 +1,47 @@
+
+[
+   {
+    "id": "halsningar",
+    "title": "Hälsningar",
+    
+    "words":[
+        {
+            "id": "hej",
+            "text": "Hej",
+            "imagePath":"/images/words/halsningar/hej.png",
+            "audioPath":"/audio/words/halsningar/hej.mp3",
+            "description": "Används som en hälsning när man träffar någon."
+        },
+
+        {
+            "id": "hejda",
+            "text": "Hejdå",
+            "imagePath":"/images/words/halsningar/hejda.png",
+            "audioPath":"/audio/words/halsningar/hejda.mp3",
+            "description": "Används som en hälsning när man skiljs åt."
+        },
+
+        {
+            "id": "godmorgon",
+            "text": "God morgon",
+            "imagePath":"/images/words/halsningar/godmorgon.png",
+            "audioPath":"/audio/words/halsningar/godmorgon.mp3",
+            "description": "Används som en hälsning på morgonen."
+        },
+
+        {
+            "id": "godnatt",
+            "text": "God natt",
+            "imagePath":"/images/words/halsningar/godnatt.png",
+            "audioPath":"/audio/words/halsningar/godnatt.mp3",
+            "description": "Används som en hälsning på kvällen eller innan man går och lägger sig."
+        }
+    ]
+
+
+
+
+   }
+]
+
+
