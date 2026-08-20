@@ -1,3 +1,52 @@
 @page "/topics"
- 
+@inject ITopicService TopicService
 
+
+
+@if (isLoading)
+{
+    <p>Loading topics...</p>
+}
+else if (loadError != null)
+ {
+    @loadError
+ }
+ else if (topics == null || !topics.Any())
+ {
+    <p>No topics available.</p>
+ }
+ else
+ {
+    @foreach (var topic in topics)
+    {
+        <h3>@topic.Title</h3>
+        @foreach (var w in topic.Words)
+        {
+            <p>@w.Text</p>
+            <p>@w.Description</p>
+        }
+    }
+ }
+
+@code 
+{
+    private List<Topic>? topics;
+    private bool isLoading = true;
+    private string? loadError;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            topics = await TopicService.GetTopicsAsync();
+        }
+        catch (Exception ex)
+        {
+            loadError = $"Failed to load topics: {ex.Message}";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
