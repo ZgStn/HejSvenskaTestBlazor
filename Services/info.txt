@@ -10,3 +10,13 @@ Servicen hämtar information.
 JSON-filen lagrar information.
 Modellerna beskriver informationens struktur.
 
+
+What TopicService should include (summary)
+
+• Read Data\topics.json (use IWebHostEnvironment.ContentRootPath to locate file).
+• Deserialize with System.Text.Json (PropertyNameCaseInsensitive = true).
+• Async methods: GetTopicsAsync and GetTopicByIdAsync.
+• Be thread-safe and stateless so it can be registered as Singleton (or Scoped).
+
+
+• ITopicService defines a contract (what methods exist). TopicService implements the contract (how data is read). Razor components inject ITopicService and call its async methods during lifecycle (e.g., OnInitializedAsync) — separation of UI and data access.

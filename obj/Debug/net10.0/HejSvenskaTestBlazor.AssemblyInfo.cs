@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HejSvenskaTestBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf8095c0f67f49aecfb61fb7e1583eac31b2a8f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("HejSvenskaTestBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HejSvenskaTestBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

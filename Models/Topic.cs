@@ -1,6 +1,5 @@
 
 using System.Collections.Generic;
-
 public class Topic
 {
     public string Id { get; set; } = "";

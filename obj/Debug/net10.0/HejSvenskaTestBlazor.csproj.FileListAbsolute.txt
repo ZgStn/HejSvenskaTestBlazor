@@ -83,3 +83,5 @@ C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\refint\HejSve
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.pdb
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.genruntimeconfig.cache
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\ref\HejSvenskaTestBlazor.dll
+c:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\Data\topics.json
+c:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.sourcelink.json
