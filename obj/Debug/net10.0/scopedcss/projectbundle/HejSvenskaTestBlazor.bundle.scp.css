@@ -361,3 +361,22 @@ main[b-owtu6rxewn] {
         opacity: 0;
     }
 }
+/* /Components/Pages/Topics.razor.rz.scp.css */
+
+/* Topics page styling */
+/* Topic & word layout: description appears under the word title */
+.topic[b-rarqgg1n7x] { margin-bottom: 1.5rem; padding: .75rem; border-radius: 8px; background:  #f8f9fa; }
+.topic-title[b-rarqgg1n7x] { margin-top: 0; margin-bottom: .75rem; }
+
+.topic-words[b-rarqgg1n7x] { display:flex; flex-wrap:wrap; gap:.75rem; }
+
+.word-item[b-rarqgg1n7x] { display:flex; flex-direction:column; /* stack description under title */ gap:.5rem; background:#fff; padding:.5rem .75rem; border:1px solid  #e6e6e6; border-radius:6px; min-width:220px; max-width:320px; box-sizing:border-box;
+}
+
+.word-top[b-rarqgg1n7x] { display:flex; align-items:center; gap:.5rem;
+}
+
+.word-item img[b-rarqgg1n7x] { width:48px; height:48px; object-fit:cover; border-radius:6px; }
+.word-text[b-rarqgg1n7x] { font-size:1rem; }
+.word-desc[b-rarqgg1n7x] { margin:0; color:#333; font-size:.95rem; }
+.word-audio[b-rarqgg1n7x] { margin-top:.25rem; align-self:flex-start; }

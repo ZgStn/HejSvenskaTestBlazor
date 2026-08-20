@@ -31,6 +31,7 @@ public class TopicService: ITopicService
         await using var fs = File.OpenRead(_path);
         return await JsonSerializer.DeserializeAsync<List<Topic>>(fs, _opts) ?? new List<Topic>();
     }
+    
     public async Task<Topic?> GetTopicByIdAsync(string id) =>
     (await GetTopicsAsync()).FirstOrDefault(t => t.Id == id);
 }

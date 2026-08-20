@@ -19,14 +19,37 @@ else if (loadError != null)
  {
     @foreach (var topic in topics)
     {
-        <h3>@topic.Title</h3>
-        @foreach (var w in topic.Words)
-        {
-            <p>@w.Text</p>
-            <p>@w.Description</p>
-        }
+
+           <div class="topic">
+            <h2 class="topic-title">@topic.Title</h2>
+            
+            <div class="topic-words">
+
+                @foreach (var w in topic.Words)
+            {
+                <article class="word-item">
+
+                    <div class="word-top">
+                          @if (!string.IsNullOrWhiteSpace(w.ImagePath))
+                        {
+                             <img src="@w.ImagePath" alt="@w.Text" />
+                        }
+                        <strong class="word-text">@w.Text</strong>
+                    </div>
+                    <p class="word-desc">@w.Description</p>
+
+                     @if (!string.IsNullOrWhiteSpace(w.AudioPath))
+                    {
+                        <audio controls src="@w.AudioPath" class="word-audio"></audio>
+                    }
+                    </article>
+                    }
+            </div>
+       </div>
+     
     }
- }
+}
+
 
 @code 
 {

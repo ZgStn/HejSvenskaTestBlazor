@@ -1,5 +1,6 @@
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\appsettings.json
+C:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\Data\topics.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\HejSvenskaTestBlazor.staticwebassets.runtime.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\HejSvenskaTestBlazor.staticwebassets.endpoints.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\HejSvenskaTestBlazor.exe
@@ -15,6 +16,7 @@ C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTes
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.AssemblyInfo.cs
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.csproj.CoreCompileInputs.cache
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.sourcelink.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -23,7 +25,6 @@ C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\scopedcss\Com
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\scopedcss\Components\Layout\ReconnectModal.razor.rz.scp.css
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\scopedcss\bundle\HejSvenskaTestBlazor.styles.css
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\scopedcss\projectbundle\HejSvenskaTestBlazor.bundle.scp.css
-C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\w0lggxqjrl-{0}-khy4lop6wu-khy4lop6wu.gz
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\huia5wydvl-{0}-bqjiyaj88i-bqjiyaj88i.gz
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\y3h7kc84l6-{0}-c2jlpeoesf-c2jlpeoesf.gz
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\fos5rxefcf-{0}-erw9l3u2r3-erw9l3u2r3.gz
@@ -71,8 +72,6 @@ C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\18
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\oq82g4we4m-{0}-abdmv1u4y3-abdmv1u4y3.gz
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\24hr50sk7i-{0}-f7fxoh55ae-f7fxoh55ae.gz
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\fmw5vi5g32-{0}-68qhiysw0j-68qhiysw0j.gz
-C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\p0po9sj0ho-{0}-x5doj5feup-x5doj5feup.gz
-C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\b2319t4a15-{0}-x5doj5feup-x5doj5feup.gz
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\staticwebassets.development.json
@@ -83,5 +82,7 @@ C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\refint\HejSve
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.pdb
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.genruntimeconfig.cache
 C:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\ref\HejSvenskaTestBlazor.dll
-c:\Users\ozged\source\repos\HejSvenskaTestBlazor\bin\Debug\net10.0\Data\topics.json
-c:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\HejSvenskaTestBlazor.sourcelink.json
+c:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\scopedcss\Components\Pages\Topics.razor.rz.scp.css
+c:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\w0lggxqjrl-{0}-9qrwk46u39-9qrwk46u39.gz
+c:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\p0po9sj0ho-{0}-4d39a03wo4-4d39a03wo4.gz
+c:\Users\ozged\source\repos\HejSvenskaTestBlazor\obj\Debug\net10.0\compressed\b2319t4a15-{0}-4d39a03wo4-4d39a03wo4.gz

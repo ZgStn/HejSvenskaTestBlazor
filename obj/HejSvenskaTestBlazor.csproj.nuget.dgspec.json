@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj": {}
+    "c:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj": {
+    "c:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj",
+        "projectUniqueName": "c:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj",
         "projectName": "HejSvenskaTestBlazor",
-        "projectPath": "C:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj",
+        "projectPath": "c:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\HejSvenskaTestBlazor.csproj",
         "packagesPath": "C:\\Users\\ozged\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\obj\\",
+        "outputPath": "c:\\Users\\ozged\\source\\repos\\HejSvenskaTestBlazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
