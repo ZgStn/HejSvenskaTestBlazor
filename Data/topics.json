@@ -95,10 +95,10 @@
             "description": "En färg som ofta associeras med kärlek och passion."
         },
         {
-            "id": "blå",
+            "id": "bla",
             "text": "Blå",
-            "imagePath": "/images/words/colors/blå.png",
-            "audioPath": "/audio/words/colors/blå.mp3",
+            "imagePath": "/images/words/colors/bla.png",
+            "audioPath": "/audio/words/colors/bla.mp3",
             "description": "En färg som ofta associeras med lugn och stabilitet."
         }
     ]

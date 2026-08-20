@@ -1,0 +1,74 @@
+@page "/topics/{id}"
+@inject ITopicService TopicService
+
+@if (isLoading)
+{
+    <p>Loading...</p>
+}
+else if (loadError != null)
+{
+    <p>@loadError</p>
+}
+else if (topic == null)
+{
+    <p>Topic not found.</p>
+}
+else
+{
+    <h1>@topic.Title</h1>
+
+    <a href="/topics">← Back to topics</a>
+
+    <div class="topic-words">
+        @foreach (var w in topic.Words)
+        {
+            <article class="word-item">
+
+                <div class="word-top">
+                    @if (!string.IsNullOrWhiteSpace(w.ImagePath))
+                    {
+                        <img src="@w.ImagePath" alt="@w.Text" />
+                    }
+
+                    <strong class="word-text">@w.Text</strong>
+                </div>
+
+                <p class="word-desc">@w.Description</p>
+
+                @if (!string.IsNullOrWhiteSpace(w.AudioPath))
+                {
+                    <audio controls src="@w.AudioPath" class="word-audio"></audio>
+                }
+
+            </article>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string id { get; set; } = "";
+
+    private Topic? topic;
+    private bool isLoading = true;
+    private string? loadError;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        isLoading = true;
+        loadError = null;
+
+        try
+        {
+            topic = await TopicService.GetTopicByIdAsync(id);
+        }
+        catch (Exception ex)
+        {
+            loadError = ex.Message;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
