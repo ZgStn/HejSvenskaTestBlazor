@@ -3,7 +3,7 @@
 
 @if (isLoading)
 {
-    <p>Loading...</p>
+    <p>Laddar...</p>
 }
 else if (loadError != null)
 {
@@ -11,13 +11,13 @@ else if (loadError != null)
 }
 else if (topic == null)
 {
-    <p>Topic not found.</p>
+    <p>Ämnet hittades inte.</p>
 }
 else
 {
     <h1>@topic.Title</h1>
 
-    <a href="/topics">← Back to topics</a>
+    <a href="/topics">← Tillbaka till ämnen</a>
 
     <div class="topic-words">
         @foreach (var w in topic.Words)
