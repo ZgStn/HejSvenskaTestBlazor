@@ -8,7 +8,7 @@
         {
             "id": "hej",
             "text": "Hej",
-            "imagePath":"/images/words/halsningar/hej.png",
+            "imagePath":"/images/words/halsningar/hej.jpg",
             "audioPath":"/audio/words/halsningar/hej.mp3",
             "description": "Används som en hälsning när man träffar någon."
         },
@@ -16,7 +16,7 @@
         {
             "id": "hejda",
             "text": "Hejdå",
-            "imagePath":"/images/words/halsningar/hejda.png",
+            "imagePath":"/images/words/halsningar/hejda.jpg",
             "audioPath":"/audio/words/halsningar/hejda.mp3",
             "description": "Används som en hälsning när man skiljs åt."
         },
@@ -24,7 +24,7 @@
         {
             "id": "godmorgon",
             "text": "God morgon",
-            "imagePath":"/images/words/halsningar/godmorgon.png",
+            "imagePath":"/images/words/halsningar/godmorgon.jpg",
             "audioPath":"/audio/words/halsningar/godmorgon.mp3",
             "description": "Används som en hälsning på morgonen."
         },
@@ -32,7 +32,7 @@
         {
             "id": "godnatt",
             "text": "God natt",
-            "imagePath":"/images/words/halsningar/godnatt.png",
+            "imagePath":"/images/words/halsningar/godnatt.jpg",
             "audioPath":"/audio/words/halsningar/godnatt.mp3",
             "description": "Används som en hälsning på kvällen eller innan man går och lägger sig."
         }
@@ -48,15 +48,15 @@
         {
             "id": "apple",
             "text": "Äpple",
-            "imagePath": "/images/words/food/apple.png",
-            "audioPath": "/audio/words/food/apple.mp3",
+            "imagePath": "/images/words/mat/apple.jpg",
+            "audioPath": "/audio/words/mat/apple.mp3",
             "description": "En röd, god frukt."
         },
         {
-            "id": "banana",
+            "id": "banan",
             "text": "Banan",
-            "imagePath": "/images/words/food/banana.png",
-            "audioPath": "/audio/words/food/banana.mp3",
+            "imagePath": "/images/words/mat/banan.jpg",
+            "audioPath": "/audio/words/mat/banan.mp3",
             "description": "En lång, gul frukt."
         }
     ]
@@ -69,15 +69,15 @@
         {
             "id": "hund",
             "text": "Hund",
-            "imagePath": "/images/words/animals/hund.png",
-            "audioPath": "/audio/words/animals/hund.mp3",
+            "imagePath": "/images/words/djur/hund.jpg",
+            "audioPath": "/audio/words/djur/hund.mp3",
             "description": "Ett husdjur som ofta kallas människans bästa vän."
         },
         {
             "id": "katt",
             "text": "Katt",
-            "imagePath": "/images/words/animals/katt.png",
-            "audioPath": "/audio/words/animals/katt.mp3",
+            "imagePath": "/images/words/djur/katt.jpg",
+            "audioPath": "/audio/words/djur/katt.mp3",
             "description": "Ett husdjur som är känt för att vara självständigt och smidigt."
         }
     ]
@@ -90,15 +90,15 @@
         {
             "id": "rod",
             "text": "Röd",
-            "imagePath": "/images/words/colors/rod.png",
-            "audioPath": "/audio/words/colors/rod.mp3",
+            "imagePath": "/images/words/farger/rod.jpg",
+            "audioPath": "/audio/words/farger/rod.mp3",
             "description": "En färg som ofta associeras med kärlek och passion."
         },
         {
             "id": "bla",
             "text": "Blå",
-            "imagePath": "/images/words/colors/bla.png",
-            "audioPath": "/audio/words/colors/bla.mp3",
+            "imagePath": "/images/words/farger/bla.jpg",
+            "audioPath": "/audio/words/farger/bla.mp3",
             "description": "En färg som ofta associeras med lugn och stabilitet."
         }
     ]

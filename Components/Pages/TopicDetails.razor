@@ -24,14 +24,14 @@ else
         {
             <article class="word-item">
 
-                <div class="word-top">
+                
                     @if (!string.IsNullOrWhiteSpace(w.ImagePath))
                     {
-                        <img src="@w.ImagePath" alt="@w.Text" />
+                        <img class="word-image" src="@w.ImagePath" alt="@w.Text" />
                     }
 
-                    @* <strong class="word-text">@w.Text</strong> *@
-                </div>
+                     <strong class="word-text">@w.Text</strong> 
+            
 
                 <p class="word-desc">@w.Description</p>
 
