@@ -18,30 +18,13 @@ else
     <h1>@topic.Title</h1>
 
     <a href="/topics">← Tillbaka till ämnen</a>
-
+@* det går igenom alla ord i topic.Words och skapar en WordCard för varje ord *@
     <div class="topic-words">
         @foreach (var w in topic.Words)
         {
-            <article class="word-item">
-
-                
-                    @if (!string.IsNullOrWhiteSpace(w.ImagePath))
-                    {
-                        <img class="word-image" src="@w.ImagePath" alt="@w.Text" />
-                    }
-
-                     <strong class="word-text">@w.Text</strong> 
-            
-
-                <p class="word-desc">@w.Description</p>
-
-                @if (!string.IsNullOrWhiteSpace(w.AudioPath))
-                {
-                    <audio controls src="@w.AudioPath" class="word-audio"></audio>
-                }
-
-            </article>
+            <WordCard WordItem="@w" />
         }
+       
     </div>
 }
 

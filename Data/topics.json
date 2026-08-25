@@ -55,7 +55,7 @@
         {
             "id": "banan",
             "text": "Banan",
-            "imagePath": "/images/words/mat/banan.jpg",
+            "imagePath": "/images/words/mat/banan.png",
             "audioPath": "/audio/words/mat/banan.mp3",
             "description": "En lång, gul frukt."
         }

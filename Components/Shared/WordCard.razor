@@ -1,0 +1,60 @@
+@* syftet är att dela upp Blazor app i mindre komponenter
+
+TopicDetails.razor
+│
+│ hämtar Topic
+│
+└── foreach (topic.Words)
+        │
+        │ skickar ett WordItem
+        ▼
+    WordCard.razor
+        ├── bild
+        ├── text
+        ├── description
+        └── audio
+
+        Jag ville separera ansvaret.
+         TopicDetails ansvarar för att hämta ett ämne och iterera över dess ord. 
+         WordCard ansvarar för hur ett enskilt ord presenteras.
+         TopicDetails skickar ett WordItem till WordCard genom en Blazor [Parameter]. 
+         Det gör komponenten mindre, tydligare och återanvändbar.
+*@
+
+@if (WordItem != null)
+{
+<article class="word-item">
+
+                
+                    @if (!string.IsNullOrWhiteSpace(WordItem.ImagePath))
+                    {
+                        <img class="word-image" src="@WordItem.ImagePath" alt="@WordItem.Text" />
+                    }
+
+                     <strong class="word-text">@WordItem.Text</strong> 
+            
+
+                <p class="word-desc">@WordItem.Description</p>
+
+                @if (!string.IsNullOrWhiteSpace(WordItem.AudioPath))
+                {
+                    <audio controls src="@WordItem.AudioPath" class="word-audio"></audio>
+                }
+
+            </article>
+
+}       
+   
+
+@* [Parameter] betyder alltså ungefär:
+
+Den här propertyn kan få sitt värde från min parent-komponent*@
+
+@code {
+
+    [Parameter]
+    public WordItem? WordItem { get; set; } = null;
+
+
+}
+
