@@ -28,7 +28,7 @@ TopicDetails.razor
                 
                     @if (!string.IsNullOrWhiteSpace(WordItem.ImagePath))
                     {
-                        <img class="word-image" src="@WordItem.ImagePath" alt="@WordItem.Text" />
+                        <img @onclick="OnImageClick" class="word-image" src="@WordItem.ImagePath" alt="@WordItem.Text" title="Klick på bilden för att lyssna!" />
                     }
 
                      <strong class="word-text">@WordItem.Text</strong> 
@@ -36,25 +36,33 @@ TopicDetails.razor
 
                 <p class="word-desc">@WordItem.Description</p>
 
-                @if (!string.IsNullOrWhiteSpace(WordItem.AudioPath))
+                @* @if (!string.IsNullOrWhiteSpace(WordItem.AudioPath))
                 {
                     <audio controls src="@WordItem.AudioPath" class="word-audio"></audio>
-                }
+                }*@
 
             </article>
 
 }       
    
 
-@* [Parameter] betyder alltså ungefär:
+@* [Parameter] betyder alltså ungefär:Den här propertyn kan få sitt värde från min parent-komponent*@
 
-Den här propertyn kan få sitt värde från min parent-komponent*@
+@if (isImageClicked && !string.IsNullOrWhiteSpace(WordItem?.AudioPath))
+{
+    <audio autoplay src="@WordItem.AudioPath" class="word-audio"></audio>
+}
+
 
 @code {
 
     [Parameter]
     public WordItem? WordItem { get; set; } = null;
+    private bool isImageClicked = false;
 
+    private void OnImageClick()
+    {
+        isImageClicked = true;
+    }
 
 }
-

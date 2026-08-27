@@ -23,6 +23,14 @@
     height: 180px;
     object-fit: cover;
     border-radius: 6px;
+    cursor:pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.word-image:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+
 }
 
 .word-text {
