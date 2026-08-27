@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using System.Diagnostics
 
 <PageTitle>Home</PageTitle>
 
@@ -9,6 +10,21 @@
     <br />
     Utforska olika ämnen och se ord med bild, ljud och beskrivning.</h3>
 
-<h4>Välj ett ämne nedan för att komma igång:
-    <a href="/topics">Utforska ämnen →</a>
-</h4>
+@foreach(var level in levels)
+{
+    <LevelCard
+               Level="@level.Number"
+               Title="@level.Title"
+               Description="@level.Description" />
+}
+
+
+@code {
+
+private List<Level> levels = new()
+{
+    new Level { Number = 1, Title = "Nivå 1", Description = "Grundläggande ord och fraser." },
+    new Level { Number = 2, Title = "Nivå 2", Description = "Mellanliggande ord och fraser." },
+};
+
+}
