@@ -1,0 +1,50 @@
+@page "/levels/{level:int}"
+@* level : namnet på route-parametern
+    int: värdet måste vara ett heltal*@
+
+
+@rendermode InteractiveServer
+@inject ITopicService TopicService
+
+<h1>Nivå @Level</h1>
+
+@*skydda foreach så att sidan inte försöker loopa över null innan datan hunnit laddas.*@
+@if (allTopics != null)
+{
+    @foreach (var topic in allTopics)
+    {
+       @if (Level == 1 && (topic.Id == "halsningar" || topic.Id == "farger"))
+       {
+        <div class="topic-link">
+            <a href="/topics/@topic.Id">@topic.Title</a>
+        </div>
+           
+       }
+       else if (Level == 2 && (topic.Id == "mat" || topic.Id == "djur"))
+       {
+          <div class="topic-link">
+            <a href="/topics/@topic.Id">@topic.Title</a>
+          </div>
+       }
+    }
+}
+
+@code {
+
+[Parameter]
+public int Level { get; set; }
+private List<Topic>? allTopics;
+protected override async Task OnInitializedAsync()
+{
+    allTopics = await TopicService.GetTopicsAsync();
+}
+
+@*för att lära sig firstRender*@
+protected override Task OnAfterRenderAsync(bool firstRender)
+{
+    Console.WriteLine($"OnAfterRenderAsync: firstRender = {firstRender}");
+
+    return Task.CompletedTask;
+}
+
+        }

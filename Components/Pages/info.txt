@@ -1,0 +1,54 @@
+När OnInitializedAsync() blir användbart
+
+Tänk istället att nivåerna inte finns i Home.razor, utan måste hämtas från exempelvis din service:
+
+Home skapas
+    ↓
+OnInitializedAsync()
+    ↓
+anropa LevelService
+    ↓
+läs levels från JSON
+    ↓
+levels får data
+    ↓
+Home visar LevelCard
+
+Det liknar det du redan gör med topics:
+
+topics.json
+    ↓
+TopicService
+    ↓
+Topics.razor
+    ↓
+OnInitializedAsync()
+    ↓
+topics
+
+Det är därför OnInitializedAsync() är mycket mer logiskt där.
+
+Enkel tumregel just nu
+Data finns redan här i koden
+→ skapa den direkt med new()
+
+Data måste hämtas/laddas
+→ ofta OnInitializedAsync()
+
+
+
+
+
+En bra minnesregel är:
+
+OnInitializedAsync
+→ när komponenten startar / data ska hämtas
+
+OnParametersSetAsync
+→ när parametrar har satts eller ändrats
+
+OnAfterRenderAsync
+→ efter att UI har renderats
+
+firstRender
+→ är detta första renderingen?

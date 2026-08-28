@@ -39,6 +39,11 @@ else if (loadError != null)
     private bool isLoading = true;
     private string? loadError;
 
+    @*I Topics.razor, där du bara hämtar alla topics och 
+    inte är beroende av en route-parameter, passar OnInitializedAsync() bättre.
+    OnInitializedAsync
+    → komponenten startar
+    *@
     protected override async Task OnInitializedAsync()
     {
         try

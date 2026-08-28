@@ -18,7 +18,7 @@ else
 {
     <h1>@topic.Title</h1>
 
-    <a href="/topics">← Tillbaka till ämnen</a>
+    <a href="/">← Tillbaka till hem</a>
 @* det går igenom alla ord i topic.Words och skapar en WordCard för varje ord *@
     <div class="topic-words">
         @foreach (var w in topic.Words)
@@ -36,6 +36,10 @@ else
     private Topic? topic;
     private bool isLoading = true;
     private string? loadError;
+
+    @*I TopicDetails.razor,
+     där sidan måste veta vilket topic-id som kom från URL:en, passar OnParametersSetAsync() bättre.
+     Så OnParametersSetAsync() används där eftersom datan beror på parametern Id.*@
 
     protected override async Task OnParametersSetAsync()
     {
