@@ -41,3 +41,12 @@ The project uses JSON files as the data source and does not use a database or au
 - TopicService – handles loading topic data from JSON
 - topics.json – contains the learning content
 
+## Screenshots
+
+### Home page
+
+![HejSvenskaTestBlazor home page](docs/images/homepage.png)
+
+### Topic – Hälsningar
+
+![Hälsningar topic](docs/images/level1-halsningar.png)
