@@ -45,8 +45,8 @@ The project uses JSON files as the data source and does not use a database or au
 
 ### Home page
 
-![HejSvenskaTestBlazor home page](docs/images/homepage.png)
+![HejSvenskaTestBlazor home page](docs/images/Homepage.png)
 
 ### Topic – Hälsningar
 
-![Hälsningar topic](docs/images/level1-halsningar.png)
+![Hälsningar topic](docs/images/Level1Halsningar.png)
